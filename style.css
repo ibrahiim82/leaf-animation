@@ -1,0 +1,97 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(images/bg.jpg);
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+.container {
+  background-image: url(images/trees.png);
+  background-size: 100% 100vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.form {
+  border: 1px rgb(211, 209, 209) solid;
+  border-radius: 1rem;
+  width: 370px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  padding-bottom: 2rem;
+  z-index: 3;
+}
+h1 {
+  color: #d15249;
+  display: flex;
+  justify-content: center;
+}
+#login {
+  width: 250px;
+  height: 30px;
+  background-color: #d15249;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+}
+#ad {
+  width: 250px;
+  height: 30px;
+  color: #d15249;
+  border: none;
+}
+#password {
+  width: 250px;
+  height: 30px;
+  color: #d15249;
+  border: none;
+}
+::placeholder {
+  color: #d15249;
+  font-weight: bold;
+}
+a {
+  color: #d15249;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+#a {
+  display: flex;
+  justify-content: space-between;
+}
+.bike img {
+  width: 250px;
+  height: 250px;
+}
+.bike {
+  animation-name: bike-girl;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  z-index: -1;
+  position: absolute;
+  top: 11rem;
+}
+@keyframes bike-girl {
+  from {
+    transform: translateX(1400px);
+  }
+  to {
+    transform: translateX(-200px);
+  }
+}
